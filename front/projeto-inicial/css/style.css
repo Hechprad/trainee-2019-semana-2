@@ -3,6 +3,9 @@ body {
     font-family: "Noto Sans";
 }
 
+button:focus {
+    outline: none; /*limpar os outros focus*/
+}
 .fixed-menu {
     height: 70px;
     width: 100%;
