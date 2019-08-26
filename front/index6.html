@@ -26,29 +26,27 @@
             height: 96px;
             width: 96px;
         }*/
-        div {
-            width: 200px;
-            height: 400px;
-            display: inline-block;
-            margin: -10px;
+        .flex-container {
+            display: flex;
+            /* padrão: row, row-reverse, column-reverse*/
+            flex-direction: row;
+            /*center, flex-start(default), flex-end, space-between e space-around*/
+            justify-content: center;
+            background-color: blue;
         }
-
-        .div-1 {
-            background-color: black;
-        }
-
-        .div-2 {
-            background-color: yellow;
-        }
-
-        .div-3 {
-            background-color: green;
+        .flex-container > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="div-1">div</div>
-    <div class="div-2">div</div>
-    <div class="div-3">div</div>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
 </body>
 </html>
