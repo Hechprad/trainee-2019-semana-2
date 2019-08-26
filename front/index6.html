@@ -28,10 +28,13 @@
         }*/
         .flex-container {
             display: flex;
-            /* padrão: row, row-reverse, column-reverse*/
-            flex-direction: row;
+            height: 500px;
+            /* padrão: row(default), column, row-reverse, column-reverse*/
+            flex-direction: c;
             /*center, flex-start(default), flex-end, space-between e space-around*/
-            justify-content: center;
+            justify-content: space-beolumntween; /*horizontal quando row*/
+            /* stretch(default), flex-start, flex-end, ceneter, baseline*/
+            align-items: flex-start; /*vertical quando row*/
             background-color: blue;
         }
         .flex-container > div {
