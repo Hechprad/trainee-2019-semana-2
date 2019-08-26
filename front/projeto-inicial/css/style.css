@@ -13,7 +13,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: gray;
     flex-wrap: wrap;
 }
 
@@ -21,8 +20,18 @@ body {
     width: 250px;
     height: 380px;
     margin: 10px;
-    background-color: green;
-    border: 1px solid red;
+    background-color: #363636;
+    border: 1px solid gray;
     border-radius: 5px;
-    overflow: hidden; /*esconder o que sai do corpo, a capa do filme*/
+    
+    overflow: hidden; /*esconder o que sai do corpo da div, a capa do filme*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1359px ) {
+    .gallery-container {
+        width: 816px;
+    }
 }
