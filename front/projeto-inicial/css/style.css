@@ -4,7 +4,7 @@ body {
 }
 
 button:focus {
-    outline: none; /*limpar os outros focus*/
+    outline: none; /*tira a cor do focus*/
 }
 .fixed-menu {
     height: 70px;
@@ -48,10 +48,7 @@ button:focus {
 .menu-content button:hover {
     background-color: #e72f85;
 }
-.menu-content button:focus {
-    outline: none;  /*tira a cor do focus*/
-}
-
+    
 .header {
     width: 100%;
     height: 450px;
@@ -151,10 +148,6 @@ button:focus {
 .more-details button:hover {    /*quando o mouse estiver em cima*/
     background-color: #e5bace;
     color: #e72f85;
-}
-
-.more-details button:focus {
-    outline: none;
 }
 
 .more-details button span {
