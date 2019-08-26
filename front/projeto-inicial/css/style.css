@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+}
+.header {
+    width: 100%;
+    height: 150px;
+    background-color: red;
+}
+
+.gallery-container {
+    margin: 10px auto; /*auto = centraliza container*/
+    width: 1360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: gray;
+    flex-wrap: wrap;
+}
+
+.gallery-container > div { /*pega as divs filhas do gallery*/
+    width: 250px;
+    height: 380px;
+    margin: 10px;
+    background-color: green;
+    border: 1px solid red;
+    border-radius: 5px;
+    overflow: hidden; /*esconder o que sai do corpo, a capa do filme*/
+}
