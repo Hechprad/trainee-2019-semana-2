@@ -30,9 +30,9 @@
             display: flex;
             height: 500px;
             /* padrão: row(default), column, row-reverse, column-reverse*/
-            flex-direction: c;
+            flex-direction: row;
             /*center, flex-start(default), flex-end, space-between e space-around*/
-            justify-content: space-beolumntween; /*horizontal quando row*/
+            justify-content: space-between; /*horizontal quando row*/
             /* stretch(default), flex-start, flex-end, ceneter, baseline*/
             align-items: flex-start; /*vertical quando row*/
             background-color: blue;
@@ -42,14 +42,15 @@
             margin: 10px;
             padding: 20px;
             font-size: 40px;
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
     <div class="flex-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        <div style="flex: 1;">1</div>
+        <div style="flex: 2;">2</div>
+        <div style="flex: 3;">3</div>
     </div>
 </body>
 </html>
