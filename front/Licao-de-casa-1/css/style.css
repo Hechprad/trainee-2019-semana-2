@@ -9,6 +9,7 @@ body {
     display: flex;
     position: fixed;
     justify-content: flex-end;
+    z-index: 1;
 }
 .menu-fixed div{
     display: flex;
@@ -123,9 +124,11 @@ como resolver?
     pai e ficar visível, no caso a div filha
     do .catalog-container*/
     position: absolute;
-    padding-left: 20px;
 }
-.legenda span {
+.legenda p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 20px;
 }
 
 @media only screen and (max-width: 320px ) {
