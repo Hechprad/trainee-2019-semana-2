@@ -1,0 +1,161 @@
+body {
+    margin: 0px;
+    background-color: wheat;
+}
+
+.menu-fixed {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+}
+.menu-fixed div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+
+.menu-fixed div div{
+    height: 30px;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.menu-fixed div div button{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background-color: transparent;
+    box-shadow: 2px 1px 5px 0px indigo;
+/*
+*****DÚVIDA*****
+como deixar a cor do texto do botão 
+sempre igual a dos elementos que
+estão embaixo, desconsiderando a .menu-fixed?
+*/
+    color: whitesmoke; /*cor do texto do botão*/
+    border: 0px;
+}
+
+button:hover {
+    background-color: tomato;
+}
+
+button:focus {
+    outline: none; /*tira a cor do focus*/
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    background-color: lightsalmon;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+/*
+*****DÚVIDA*****
+Como diminuir o tamanho da fonte do h1
+proporcionalmente à resolução da tela
+conforme for diminuindo?
+*/
+.header h1 {
+    text-shadow: 2px 2px darkgrey;
+}
+
+.catalog-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.catalog-container > div {
+    width: auto;
+    height: 380px;
+    display: flex;
+    border: 3px solid crimson;
+    border-radius: 6px;
+    margin: 3px;
+    /*esconde o que sai do corpo 
+    da div, a capa do filme*/
+    overflow: hidden;
+    /*relative para o posicionamento 
+    da .legenda*/
+    position: relative;
+/*
+*****DÚVIDA*****
+o relative deixa o fixed menu embaixo,
+como resolver?
+*/
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.catalog-container img {
+    width: 260px;
+    height: 390px;
+}
+
+.legenda {
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+    /*absolute para pegar o primeiro relative 
+    pai e ficar visível, no caso a div filha
+    do .catalog-container*/
+    position: absolute;
+    padding-left: 20px;
+}
+.legenda span {
+}
+
+@media only screen and (max-width: 320px ) {
+    .maezona{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-fixed {
+        height: auto;
+        position: relative;
+    }
+
+    .menu-fixed div{
+        width: 100%;
+        justify-content: right;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    
+    .menu-fixed div div{
+        border-radius: 0px;
+    }
+
+    .menu-fixed div div button{
+        border-radius: 0px;
+    }
+
+    .header {
+        font-size: 15px;
+        text-align: center;
+    }
+}
