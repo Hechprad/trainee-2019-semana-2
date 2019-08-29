@@ -1,4 +1,4 @@
-# Trainee 2019 semana 3
+﻿# Trainee 2019 semana 3 - teste
 
 Estes resultados são a consequência de pesos (também chamados regras de prioridade)à CSS :
   - O pesode um elemento é de 1
